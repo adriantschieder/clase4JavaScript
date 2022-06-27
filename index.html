@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Comparador de Creditos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Solicitar Prestamo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Casas de Crédito
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#">Bancos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Financieras</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-info">Contacto</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="text-center mt-4">Calcule en que companía le conviene sacar un crédito</h1>
+        <p class="mt-2">Utilice nuestro comparador de ofertas de prestamos de Argentina, para calcular la empresa que más le conviene.</p>
+        <div class="alert alert-warning" role="alert">
+            IMPORTANTE: Nuestro comparador solo pretende comparar ofertas. <strong>Es su responsabilidad</strong> asumir los costos y riesgos de realizar un contrato de crédito con cualquier empresa.</p>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Ingrese su Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ejemplo: nombre@gmail.com">
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Ingrese el Monto a Solicitar</label>
+                    <input type="number" class="form-control" id="monto" placeholder="hasta 100000">
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Establezca la Cantidad de Cuotas</label>
+                    <input type="number" class="form-control" id="cuotas" placeholder="24">
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row">
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una entidad</option>
+                        <option value="1">Banco Nación</option>
+                        <option value="2">Banco Provincia</option>
+                        <option value="3">Banco Macro</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una entidad</option>
+                        <option value="1">Banco Nación</option>
+                        <option value="2">Banco Provincia</option>
+                        <option value="3">Banco Macro</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una entidad</option>
+                        <option value="1">Banco Nación</option>
+                        <option value="2">Banco Provincia</option>
+                        <option value="3">Banco Macro</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-success mt-3">Comparar</button>
+        </form>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="miarchivo.js"></script>
+</body>
+</html>
